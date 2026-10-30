@@ -1,4 +1,4 @@
-package edu.travel.model;
+package model;
 
 /**
  * Anything a customer can travel in. Every vehicle has an id, a name and a base fare.
