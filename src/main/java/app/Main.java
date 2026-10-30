@@ -1,22 +1,22 @@
-package edu.travel.app;
+package app;
 
-import edu.travel.command.BookCommand;
-import edu.travel.command.CancelCommand;
-import edu.travel.command.CheckCommand;
-import edu.travel.command.CommandInvoker;
-import edu.travel.factory.BusFactory;
-import edu.travel.factory.PlaneFactory;
-import edu.travel.factory.TrainFactory;
-import edu.travel.factory.VehicleFactory;
-import edu.travel.model.Seat;
-import edu.travel.model.Vehicle;
-import edu.travel.observer.EmailNotifier;
-import edu.travel.observer.LogObserver;
-import edu.travel.observer.Subject;
-import edu.travel.service.ReservationService;
-import edu.travel.strategy.FlatFare;
-import edu.travel.strategy.HighSeasonFare;
-import edu.travel.strategy.PricingStrategy;
+import command.BookCommand;
+import command.CancelCommand;
+import command.CheckCommand;
+import command.CommandInvoker;
+import factory.BusFactory;
+import factory.PlaneFactory;
+import factory.TrainFactory;
+import factory.VehicleFactory;
+import model.Seat;
+import model.Vehicle;
+import observer.EmailNotifier;
+import observer.LogObserver;
+import observer.Subject;
+import service.ReservationService;
+import strategy.FlatFare;
+import strategy.HighSeasonFare;
+import strategy.PricingStrategy;
 
 public class Main {
 
