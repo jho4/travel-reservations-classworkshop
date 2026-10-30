@@ -1,7 +1,7 @@
 package service;
 
 import model.Seat;
-import model.SeatState;
+import model.ReservationState;
 import model.Vehicle;
 import observer.ReservationEvent;
 import observer.Subject;
@@ -47,7 +47,7 @@ public class ReservationService {
 
     public Seat cancel(String seatId) {
         Seat seat = find(seatId);
-        if (seat.getState() == SeatState.CANCELLED) {
+        if (seat.getState() == ReservationState.CANCELLED) {
             throw new IllegalStateException("The seat " + seat.getId() + " is already cancelled");
         }
         seat.cancel();

@@ -1,7 +1,7 @@
 package model;
 
 /** Possible states of a seat (reservation). */
-public enum SeatState {
+public enum ReservationState {
     CONFIRMED,
     CANCELLED
 }

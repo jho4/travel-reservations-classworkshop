@@ -11,14 +11,14 @@ public class Seat {
     private final String customerName;
     private final Vehicle vehicle;
     private final double finalCost;
-    private SeatState state;
+    private ReservationState state;
 
     public Seat(String id, String customerName, Vehicle vehicle, double finalCost) {
         this.id = id;
         this.customerName = customerName;
         this.vehicle = vehicle;
         this.finalCost = finalCost;
-        this.state = SeatState.CONFIRMED;
+        this.state = ReservationState.CONFIRMED;
     }
 
     public String getId() {
@@ -29,12 +29,12 @@ public class Seat {
         return customerName;
     }
 
-    public SeatState getState() {
+    public ReservationState getState() {
         return state;
     }
 
     public void cancel() {
-        this.state = SeatState.CANCELLED;
+        this.state = ReservationState.CANCELLED;
     }
 
     @Override
